@@ -1,4 +1,4 @@
-# poimandres.nvim
+# kaimandres.nvim
 
 <div align="center">
   <p>
@@ -13,19 +13,16 @@
     <img width="1728" height="1084" alt="Screenshot of Java, C++, and Python Code" src="https://github.com/user-attachments/assets/a24eee1a-dc92-440b-a2c1-ac157baa6b05" />
   </p>
   <p>
-    <strong>A robust, high-contrast, semantic port of the Poimandres aesthetic for Neovim.</strong>
+    <strong>A robust, high-contrast, semantic crossover between Poimandres and Kanagawa  aesthetics for Neovim.</strong>
   </p>
 </div>
 
 ## Philosophy & Motivation
 
-While the Poimandres theme family is renowned for its sleek inspired aesthetics, I found that many existing ports for Neovim too minimal or lacked the semantic depth required for heavy development workflows.
+While I love the Poimandres theme family for its renowned sleek aesthetics, I found that many existing ports for Neovim too minimal or lacked the semantic depth required for heavy development workflows. Combined with the robust architecture, excellent handling of semantic highlights, and dimming logics of [Kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim), I created this theme as a balanced approach between **readability** and **aesthetics**. Hence the name: **KAIMANDRES**.
 
-So, my port for **poimandres.nvim** was born out of a specific need: **Readability and Aesthetics.**
-
-1.  **Enhanced Palette**: I have cherry-picked and tuned specific shades; introducing new colors while strictly maintaining the original "soul" of the Poimandres theme and its iconic palette; to ensure that syntax elements pop without causing eye strain.
-2.  **Ecosystem Consistency**: This palette has been tested across my entire workflow, including **iTerm2, Ghostty, Lazygit, Neovim, and Superfile**. This ensures a smooth visual transition between the shell, file manager, and editor.
-3.  **Robust Architecture**: I have adopted the architecture of [Kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) because of its excellent handling of semantic highlights, dimming logic, and compilation speed (I am a huge Kanagawa fan as well, so shout out to Rebelot for this awesome theme).
+1. **Enhanced Palette**: I have cherry-picked and tuned specific shades; introducing new colors while strictly maintaining the original "soul" of the Poimandres theme and its iconic palette; to ensure that syntax elements pop without causing eye strain.
+2. **Ecosystem Consistency**: This palette has been tested across my entire workflow, including **iTerm2, Ghostty, Lazygit, Neovim, and Superfile**. This ensures a smooth visual transition between the shell, file manager, and editor.
 
 ## Installation
 
@@ -34,18 +31,18 @@ Install via your favorite package manager. For me, I've always been using Lazy.n
 ### [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
--- plugins/poimandres.nvim
+-- plugins/kaimandres.nvim
 return {
-  "MartelleV/poimandres.nvim",
+  "MartelleV/kaimandres.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    require('poimandres').setup({
+    require('kaimandres').setup({
       -- leave empty to use default setup!
     })
     -- Some tweaks
     vim.api.nvim_create_autocmd("ColorScheme", {
-      pattern = "poimandres",
+      pattern = "kaimandres",
       callback = function()
         vim.api.nvim_set_hl(0, "LineNr", { bg = "none" }) -- Remove backgrounds of line numbers and worktree indents
         vim.api.nvim_set_hl(0, "StatusLine", { bg = "#16161e" }) -- Remove annoying blocks in Lualine (if this happens to you)
@@ -61,7 +58,7 @@ return {
 Because this theme is built on the Kanagawa engine, it supports a wide range of customizations.
 
 ```lua
-require('poimandres').setup({
+require('kaimandres').setup({
     undercurl = true,           -- enable undercurls
     commentStyle = { italic = true },
     functionStyle = {},
@@ -85,24 +82,24 @@ require('poimandres').setup({
 
 ## Integrations
 
-This theme includes hand-tuned highlights for the following plugins, ensuring they fit with the Poimandres Darker aesthetic:
+Kaimandres includes hand-tuned highlights for the following plugins:
 
-* **Treesitter** (Standard and Context)
-* **Native LSP** & **Semantic Tokens**
-* **Telescope**
-* **Gitsigns** & **Neogit**
-* **NvimTree** & **NeoTree**
-* **Blink.cmp** & **Nvim-cmp**
-* **Dap-UI** (Debug Adapter Protocol)
-* **Indent Blankline** & **Mini.indentscope**
-* **Lazy.nvim** & **Mason**
-* **Notify** & **Noice**
-* **Trouble** & **Aerial**
-* **Mini.nvim** suite
+- **Treesitter** (Standard and Context)
+- **Native LSP** & **Semantic Tokens**
+- **Telescope**
+- **Gitsigns** & **Neogit**
+- **NvimTree** & **NeoTree**
+- **Blink.cmp** & **Nvim-cmp**
+- **Dap-UI** (Debug Adapter Protocol)
+- **Indent Blankline** & **Mini.indentscope**
+- **Lazy.nvim** & **Mason**
+- **Notify** & **Noice**
+- **Trouble** & **Aerial**
+- **Mini.nvim** suite
 
 ### Lualine Support
 
-This theme ships with a dedicated Lualine theme file.
+Kaimandres ships with a dedicated Lualine theme file.
 
 ```lua
 require('lualine').setup {
@@ -112,11 +109,13 @@ require('lualine').setup {
 }
 
 ```
+
 ## Reporting Issues
 
 If you encounter any bugs, visual inconsistencies, or unexpected behavior while using this theme, please open an issue/PR, I will solve it ASAP.
 
 When reporting an issue, please include:
+
 - A clear description of the problem
 - Screenshots, if applicable
 - Your Neovim version and relevant configuration
@@ -125,9 +124,9 @@ When reporting an issue, please include:
 
 This project has been built based on many inspirations. Special thanks to:
 
-* **[Rebelot](https://github.com/rebelot)** for creating **Kanagawa.nvim** and inspired me with the incredible architecture and logic.
-* **[Poimandres](https://github.com/drcmda/poimandres-theme)** developers for the original VS Code theme and the beautiful color theory.
-* **[The iTerm2 Color Scheme Community](https://github.com/mbadolato/iTerm2-Color-Schemes)** for introducing me to this aesthetic.
+- **[Rebelot](https://github.com/rebelot)** for creating **Kanagawa.nvim** and inspired me with the incredible architecture and logic.
+- **[Poimandres](https://github.com/drcmda/poimandres-theme)** developers for the original VS Code theme and the beautiful color theory.
+- **[The iTerm2 Color Scheme Community](https://github.com/mbadolato/iTerm2-Color-Schemes)** for introducing me to this aesthetic.
 
 ## License
 

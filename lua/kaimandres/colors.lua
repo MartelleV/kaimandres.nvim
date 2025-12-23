@@ -28,7 +28,7 @@ local palette = {
 
   -- Accent Colors
   pink = "#d0679d",
-  rose = "#e087b3",
+  rose = "#ea9bba",
   teal = "#5de4c7",
   aqua = "#7ae9cc",
   green = "#91d7a3",
@@ -45,7 +45,7 @@ local palette = {
   -- Magenta/Purple family
   magenta = "#f087bd",
   purple = "#b8a4de",
-  lavender = "#d0c0f0",
+  lavender = "#d0c9ff",
 
   -- Cyan family
   cyan = "#89ddff",
@@ -84,13 +84,13 @@ local M = {}
 ---@return { theme: ThemeColors, palette: PaletteColors}
 function M.setup(opts)
   opts = opts or {}
-  local override_colors = opts.colors or require("poimandres").config.colors
+  local override_colors = opts.colors or require("kaimandres").config.colors
 
   -- Merge palette overrides
   local updated_palette = vim.tbl_extend("force", palette, override_colors.palette or {})
 
   -- Generate theme
-  local theme_colors = require("poimandres.themes").generate(updated_palette)
+  local theme_colors = require("kaimandres.themes").generate(updated_palette)
 
   -- Merge theme overrides
   local theme_overrides = vim.tbl_deep_extend("force", override_colors.theme["all"] or {}, {})

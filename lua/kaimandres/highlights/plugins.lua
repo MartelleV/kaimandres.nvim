@@ -1,9 +1,9 @@
 local M = {}
 
----@param colors PoimandresColors
----@param config? PoimandresConfig
+---@param colors KaimandresColors
+---@param config? KaimandresConfig
 function M.setup(colors, config)
-  config = config or require("poimandres").config
+  config = config or require("kaimandres").config
   local theme = colors.theme
   return {
     -- Gitsigns

@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup(colors, config)
-  config = config or require("poimandres").config
+  config = config or require("kaimandres").config
   local theme = colors.theme
 
   return {
