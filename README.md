@@ -104,7 +104,7 @@ Kaimandres ships with a dedicated Lualine theme file.
 ```lua
 require('lualine').setup {
   options = {
-    theme = 'poimandres'
+    theme = 'kaimandres'
   }
 }
 
@@ -112,11 +112,11 @@ require('lualine').setup {
 
 ## Reporting Issues
 
-If you encounter any bugs, visual inconsistencies, or unexpected behavior while using this theme, please open an issue/PR, I will solve it ASAP.
+If you encounter any bugs, visual inconsistencies, or unexpected behavior while using Kaimandres, please open an issue/PR, I will solve it ASAP.
 
 When reporting an issue, please include:
 
-- A clear description of the problem
+- A clear description of the problem (e.g., with which language did you encounter this, steps to reproduce the problem)
 - Screenshots, if applicable
 - Your Neovim version and relevant configuration
 
