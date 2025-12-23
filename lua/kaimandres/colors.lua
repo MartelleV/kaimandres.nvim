@@ -34,7 +34,7 @@ local palette = {
   green = "#91d7a3",
   paleGreen = "#a8e6b8",
   yellow = "#fffac2",
-  gold = "#e7d77d",
+  gold = "#e7d66d",
 
   -- Blues
   blue = "#78a9ff",
