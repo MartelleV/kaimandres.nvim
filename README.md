@@ -7,10 +7,10 @@
     </a>
   </p>
   <p>
-    <img alt="Screenshot of Neovim Dashboard" />
+    <img width="1728" height="1084" alt="Screenshot of Neovim Dashboard" src="https://github.com/user-attachments/assets/56fbf4c8-21eb-4a8c-a3ec-1707ff34d87f" />
   </p>
   <p>
-    <img alt="Screenshot of Java, C++, and Python Code" />
+    <img width="1728" height="1084" alt="Screenshot of Java, C++, and Python Code" src="https://github.com/user-attachments/assets/a24eee1a-dc92-440b-a2c1-ac157baa6b05" />
   </p>
   <p>
     <strong>A robust, high-contrast, semantic port of the Poimandres aesthetic for Neovim.</strong>
