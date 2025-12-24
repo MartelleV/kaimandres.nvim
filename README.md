@@ -67,9 +67,6 @@ return {
 
 Because Kaimandres is based on the Kanagawa engine, it supports a wide range of customizations.
 
-<details>
-    <summary>Click to view configuration options</summary>
-
     ```lua
     require('kaimandres').setup({
         undercurl = true,           -- enable undercurls
@@ -92,7 +89,6 @@ Because Kaimandres is based on the Kanagawa engine, it supports a wide range of 
     })
 
     ```
-</details>
 
 ---
 
